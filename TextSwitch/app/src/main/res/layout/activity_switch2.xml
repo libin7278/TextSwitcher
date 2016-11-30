@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88000000">
+
+    <LinearLayout
+        android:visibility="invisible"
+        android:id="@+id/ll_second_sound_toast"
+        android:layout_width="330dp"
+        android:layout_height="280dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/toast_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您可以尝试说:"
+            android:textColor="#ffffff"
+            android:textSize="35sp" />
+
+        <com.mvp.libin.textswitch.view.AutoVerticalScrollTextView
+            android:id="@+id/toast_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/ll_first_sound_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="44dp"
+        android:layout_alignTop="@+id/ll_second_sound_toast"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ytm_tv_bg"
+            android:gravity="center"
+            android:text="抱歉,没有听清 ?"
+            android:textColor="#ffffff"
+            android:textSize="35sp" />
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="你可以尝试说 卖西瓜 啦啦啦"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
